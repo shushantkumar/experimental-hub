@@ -16,4 +16,5 @@ class RPPGHeartRateFilter(Filter):
         return "RPPG_HEART_RATE"
 
     async def process(self, _: VideoFrame, ndarray: numpy.ndarray) -> numpy.ndarray:
+        ndarray = cv2.cvtColor(cv2.Canny(ndarray, 100, 200), cv2.COLOR_GRAY2BGR)
         return ndarray

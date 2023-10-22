@@ -149,7 +149,7 @@ function ParticipantDataModal({
     setSelectedFilter(filter);
 
     // Use this line for current filters.
-    if (["test", "edge", "rotation", "delay-v"].includes(filter.id)) {
+    if (["test", "edge", "rotation", "delay-v", "rppg"].includes(filter.id)) {
       // Uncomment to use for new filters.
       // if (testData.map((f) => f.type === "video" || f.type === "both" ? f.id : "").includes(filter.id)) {
       setParticipantCopy((oldParticipant) => ({
