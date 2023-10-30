@@ -21,6 +21,10 @@
       "type": "DELAY",
       "id": "delay-v",
       "size": 60
+    },
+    {
+      "type": "RPPG_HEART_RATE",
+      "id": "rppg"
     }
   ]
 }
