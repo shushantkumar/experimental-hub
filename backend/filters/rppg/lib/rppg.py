@@ -8,7 +8,7 @@ import pandas as pd
 from PyQt5.QtCore import pyqtSignal, QObject
 import sys
 
-from yarppg.rppg.camera import Camera
+from lib.camera import Camera
 
 
 def write_dataframe(path, df):

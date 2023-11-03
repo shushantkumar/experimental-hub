@@ -9,7 +9,7 @@ mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
 mp_face_mesh = mp.solutions.face_mesh
 
-from yarppg.rppg.roi.region_of_interest import RegionOfInterest, get_default_bgmask
+from lib.roi.region_of_interest import RegionOfInterest, get_default_bgmask
 
 resource_path = Path(__file__).parent.parent / "_resources"
 
