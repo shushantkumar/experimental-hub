@@ -8,8 +8,7 @@ from filters.filter import Filter
 
 
 class RPPGHeartRateFilter(Filter):
-    """Filter to calculate Heart Rate using RPPG algorithm
-    """
+    """Filter to calculate Heart Rate using RPPG algorithm"""
 
     @staticmethod
     def name(self) -> str:
