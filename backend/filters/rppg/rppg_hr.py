@@ -11,14 +11,15 @@ from .rppg_utils.processors.li_cvpr import LiCvprProcessor
 from av import VideoFrame
 
 from filters.filter import Filter
+from filters import FilterDict
 
 
 class RPPGHeartRateFilter(Filter):
     """Filter to calculate Heart Rate using RPPG algorithm
     """
-    def __init__(self):
-        super.__init__()
-        self.roi_detector = FaceMeshDetector(draw_landmarks=True) 
+    def __init__(self, config: FilterDict, audio_track_handler, video_track_handler):
+        super().__init__(config, audio_track_handler, video_track_handler)
+        self.roi_detector = FaceMeshDetector(draw_landmarks=True)
 
         digital_lowpass = get_butterworth_filter(30, 1.5)
         self.hr_calc = HRCalculator(update_interval=30, winsize=300, filt_fun=lambda vs: [digital_lowpass(v) for v in vs])
