@@ -1,0 +1,39 @@
+{
+    "id": "4b4ecc1b14",
+    "title": "df",
+    "date": 1701376980000,
+    "record": false,
+    "time_limit": 0,
+    "description": "adf",
+    "creation_time": 1699649077718,
+    "end_time": 0,
+    "start_time": 1699649090796,
+    "notes": [],
+    "participants": [
+        {
+            "id": "335beb94f7",
+            "participant_name": "sadf",
+            "banned": false,
+            "size": {
+                "width": 300,
+                "height": 300
+            },
+            "muted_video": true,
+            "muted_audio": true,
+            "position": {
+                "x": 448,
+                "y": 128.99998769760248,
+                "z": 0
+            },
+            "chat": [],
+            "audio_filters": [],
+            "video_filters": [
+                {
+                    "type": "RPPG_HEART_RATE",
+                    "id": "rppg"
+                }
+            ]
+        }
+    ],
+    "log": []
+}
