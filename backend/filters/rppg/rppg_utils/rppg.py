@@ -78,7 +78,7 @@ class RPPG:
 
     def rppg_updated(self, results):
         heart_rate = results.hr
-
+        print(heart_rate)
         frame = results.rawimg
         if not math.isnan(heart_rate):
             cv2.putText(frame, f"Heart Rate: {int(heart_rate)} bpm", (10, 30),
